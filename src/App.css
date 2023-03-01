@@ -1,38 +1,120 @@
-.App {
-  text-align: center;
-}
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+  @import url('https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@200;300&family=Poppins:ital,wght@0,200;0,300;0,400;1,200;1,300&family=Spline+Sans+Mono:wght@300;400;500;600&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  font-family: 'poppins','sans-serif';
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+section{
   display: flex;
-  flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  min-height: 100vh;
+  width: 100%;
+  background: url('https://a-static.mlcdn.com.br/1500x1500/adesivo-decorativo-de-parede-paisagem-lua-na-arvore-gaudesivos/gaudesivos/12771252964/0bfb7aa4fb95e2bd405af687e3734eb2.jpg')no-repeat;
+  background-position: center;
+  background-size: cover;
 }
-
-.App-link {
-  color: #61dafb;
+.form-box{
+  position: relative;
+  width:400px;
+  height: 450px;
+  background:transparent;
+  border: 2px solid rgba(255,255,255,0.5);
+  border-radius:20px;
+  backdrop-filter: blur(20px);
+  display: flex;
+  align-items:center;
+  justify-content: center;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+h2{
+  font-size: 2em;
+  color:#fff;
+  text-align: center;
+}
+.inputbox{
+  position: relative;
+  margin:30px 0;
+  width: 310px;
+  border-bottom: 2px solid #fff;
+}
+.inputbox label{
+  position: absolute;
+  top: 50%;
+  left: 5px;
+  transform: translateY(-50%);
+  color: #fff;
+  font-size:1em;
+  pointer-events: none;
+  transition: 0.4s;
+}
+input:focus ~ label,
+input:valid ~ label{
+  top: -5px;
+}
+.inputbox input{
+  width: 100%;
+  height: 50px;
+  background: transparent;
+  border: none;
+  font-size:1em;
+  outline: none;
+  padding: 0 35px 0 5px;
+  color:#fff
+}
+.email-icon{
+  position:absolute;  
+  right: 8px;
+  color: #fff;
+  font-size: 1.2em;
+  top: 20px;
+}
+.lock-icon{
+  position:absolute;  
+  right: 8px;
+  color: #fff;
+  font-size: 1.2em;
+  top: 20px;
+}
+.forget{
+  margin: -15px 0 15px;
+  font-size: .9em;
+  color: #fff;
+  display: flex;
+  justify-content:center;
+}
+.forget label input{
+  margin-right: 3px;
+}
+.forget label a{
+  color:#fff;
+  text-decoration: none;
+}
+.forget label a:hover{
+  text-decoration: underline;
+}
+button{
+  width: 100%;
+  height: 40px;
+  border-radius:40px;
+  border: none;
+  outline: none;
+  cursor:pointer;
+  background: #fff;
+  font-size:1em;
+  font-weight: 600;
   }
-  to {
-    transform: rotate(360deg);
-  }
+.register{
+  font-size:.9em;
+  color:#fff;
+  text-align: center;
+  margin: 25px 0 10px;
+}
+.register p a {
+    text-decoration: none;
+    color:#fff;
+    font-weight: 600;
+}
+.register p a:hover{
+  text-decoration: underline;
 }
